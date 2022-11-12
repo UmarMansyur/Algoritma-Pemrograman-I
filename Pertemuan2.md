@@ -213,8 +213,29 @@ Buatlah program sederhana untuk menghitung luas persegi panjang dengan inputan d
 Contoh:
 ```php
 <?php
-$panjang = readline("Masukkan panjang: ");
-$lebar = readline("Masukkan lebar: ");
+echo "Masukkan panjang: ";
+$panjang = trim(fgets(STDIN));
+echo "Masukkan lebar: ";
+$lebar = trim(fgets(STDIN));
+$luas = $panjang * $lebar;
+echo "Luas persegi panjang adalah " . $luas;
+?>
+```
+```php
+$uts = trim(fgets(STDIN));
+```
+Keterangan: <br/>
+- `trim()` digunakan untuk menghapus spasi di awal dan akhir string
+- `fgets(STDIN)` digunakan untuk membaca inputan dari user
+#### 3.3 Membuat Program Sederhana dengan Inputan dan Validasi
+Buatlah program sederhana untuk menghitung luas persegi panjang dengan inputan dari user meggunakan terminal dan validasi inputan. <br/>
+Contoh:
+```php
+<?php
+echo "Masukkan panjang: ";
+$panjang = is_numeric(trim(fgets(STDIN))) ? trim(fgets(STDIN)) : 1; 
+echo "Masukkan lebar: ";
+$lebar = is_numeric(trim(fgets(STDIN))) ? trim(fgets(STDIN)) : 1;
 $luas = $panjang * $lebar;
 echo "Luas persegi panjang adalah " . $luas;
 ?>
@@ -224,15 +245,18 @@ Buatlah program untuk menghitung nilai akhir dari nilai UTS, UAS, dan Tugas. <br
 Contoh:
 ```php
 <?php
-$uts = readline("Masukkan nilai UTS: ");
-$uas = readline("Masukkan nilai UAS: ");
-$tugas = readline("Masukkan nilai Tugas: ");
-$nilaiAkhir = ($uts * 0.3) + ($uas * 0.4) + ($tugas * 0.3);
+echo "Masukkan nilai UTS: ";
+$uts = is_numeric(trim(fgets(STDIN))) ? trim(fgets(STDIN)) : 1;
+echo "Masukkan nilai UAS: ";
+$uas =is_numeric(trim(fgets(STDIN))) ? trim(fgets(STDIN)) : 1;
+echo "Masukkan nilai Tugas: ";
+$tugas = is_numeric(trim(fgets(STDIN))) ? trim(fgets(STDIN)) : 1;
+$nilaiAkhir = (0.3 * $uts) + (0.3 * $uas) + (0.4 * $tugas);
 echo "Nilai akhir adalah " . $nilaiAkhir;
 ?>
 ```
 ## 4. Tugas Praktikum:
-1. Buatlah program sederhana untuk menghitung luas lingkaran dengan menggunakan PHP. <br/>
+1. Buatlah program untuk menghitung luas lingkaran. <br/>
 2. Buatlah program sederhana untuk menghitung luas persegi panjang dengan menggunakan PHP. <br/>
 3. Buatlah program sederhana untuk menghitung luas segitiga dengan menggunakan PHP. <br/>
 4. Buatlah program sederhana untuk menghitung luas trapesium dengan menggunakan PHP. <br/>
@@ -245,11 +269,22 @@ echo "Nilai akhir adalah " . $nilaiAkhir;
 11. Buatlah program sederhana untuk menghitung luas tabung dengan menggunakan PHP. <br/>
 12. Buatlah program sederhana untuk menghitung luas kerucut dengan menggunakan PHP. <br/>
 13. Buatlah program sederhana untuk menghitung luas prisma segitiga dengan menggunakan PHP. <br/>
-14. Buatlah program sederhana untuk menghitung luas prisma segiempat dengan menggunakan PHP. <br/>
+14. Buatlah program inputan tentang biodata diri. <br/>
 15. Buatlah program sederhana untuk menghitung luas limas segitiga dengan menggunakan PHP. <br/>
-16. Buatlah program sederhana untuk menghitung luas limas segiempat dengan menggunakan PHP. <br/>
-17. Buatlah program sederhana untuk menghitung luas kubus dengan menggunakan PHP. <br/>
-18. Buatlah program sederhana untuk menghitung luas bola dengan menggunakan PHP. <br/>
-19. Buatlah program sederhana untuk menghitung luas tabung dengan menggunakan PHP. <br/>
+16. Buatlah program tentang penjualan makanan, dimana user dapat menampilkan menu masakan yang dimasukkan dan dapat mengetahui harga makanan yang dibeli. <br/>
+17. Buatlah program tentang pengisian bom bensin dengan jenis bahan bakar yang berbeda. untuk pertamax 95, pertamax 97, pertamax 99, pertalite, premium, solar, dan bio solar. Masing-masing jenis bahan bakar memiliki harga yang berbeda. <br/>
+18. asumsikan bahwa harga dari 3 bolpen adalah 5000. sedangkan harga dari 1 penggaris adalah 2000. Buatlah program untuk menghitung total harga dari 3 bolpen dan 1 penggaris. <br/>
+19. Dalam permainan catur, setiap bidak memiliki nilai yang berbeda. Bidak yang paling tinggi adalah raja, sedangkan yang paling rendah adalah pion. Buatlah program untuk menghitung nilai dari 2 buah bidak yang dimasukkan oleh user. Dengan asumsi bahwa raja memiliki nilai 100, ratu 9, benteng 5, kuda 3, dan pion 1. <br/>
 20. Buatlah program sederhana untuk menghitung luas kerucut dengan menggunakan PHP. <br/>
-
+## Ketentuan: <br/>
+- Gunakan inputan dari user menggunakan terminal. <br/>
+- Gunakan operator aritmatika. <br/>
+- NIM yang berakhiran ganjil maka mengerjakan soal ganjil, begitu juga sebaliknya. <br/>
+- Lengkapi dengan validasi inputan. <br/>
+- Tidak boleh menggunakan pengkondisian if. <br/>
+- Program yang ditulis disalin ke carbon.now.sh dan dijadikan gambar. <br/>
+- Output yang dihasilkan harus di screenshot, dan disertakan di setiap jawaban. <br/>
+- Jenis kode program yang sama di anggap tidak mengerjakan. <br/>
+- Setiap kode yang dibuat harus disertai penjelasan. <br/>
+- Format laporan dapat di klik pada link berikut:
+https://docs.google.com/document/d/13DdL1y43RwbF5HRPGseVgJWlYw1bdxgd/edit?usp=share_link&ouid=109974887201006898482&rtpof=true&sd=true

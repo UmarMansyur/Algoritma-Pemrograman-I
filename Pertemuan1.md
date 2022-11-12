@@ -114,13 +114,21 @@ Copyright (c) The PHP Group
 Zend Engine v4.1.0, Copyright (c) Zend Technologies
 ```
 10. Agar PHP dapat dikenali di Command Prompt, maka diperlukan sebuah perintah tambahan. Untuk menambahkan perintah tersebut, maka buka Command Prompt sebagai Administrator <br/>
-11. Ketikkan command: <br/>
+11. Klik logo windows, kemudian ketikkan <i>env</i>, setelah itu klik <i>Edit the system environment variables</i> <br/>
+12. Pada bagian <i>Advanced</i>, klik <i>Environment Variables</i> <br/>
+13. Pada bagian <i>System variables</i>, klik <i>Path</i> dan Klik <i>New</i> <br/>
+14. Ketikkan <i>C:\php</i> -> disesuaikan dengan lokasi folder dari php yang telah di download.<br/>
+15. Klik <i>OK</i> <br/>
+16. Buka Command Prompt <br/>
+17. Ketikkan command: <br/>
 ```
-setx path "%path%;C:\php"
+php -v
 ```
-12. Jika muncul tulisan seperti berikut, maka perintah telah berhasil ditambahkan <br/>
+18. Jika muncul tulisan seperti berikut, maka PHP telah berhasil diinstall <br/>
 ```
-SUCCESS: Specified value was saved.
+PHP 8.1.0 (cli) (built: Dec  1 2021 15:00:00) ( ZTS Visual C++ 2019 x64 )
+Copyright (c) The PHP Group
+Zend Engine v4.1.0, Copyright (c) Zend Technologies
 ```
 #### 1.5 Instalasi Visual Studio Code
 Visual Studio Code adalah sebuah text editor yang dapat digunakan untuk menulis program PHP. Visual Studio Code dapat didownload di <a href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a>. Pada praktikum ini akan dijelaskan mengenai instalasi Visual Studio Code pada sistem operasi Windows. <br/>
@@ -134,7 +142,7 @@ Pada praktikum ini akan dijelaskan mengenai cara membuat program PHP. <br/>
 1. Buka Visual Studio Code <br/>
 2. Klik File -> New File <br/>
 3. Ketikkan kode program PHP <br/>
-```
+```php
 <?php
 echo "Hello World";
 ?>
