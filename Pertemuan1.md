@@ -23,7 +23,9 @@ Algortima di atas merupakan algoritma yang sederhana, namun algoritma yang lebih
 2. Algoritma dalam bidang ilmu komputer <br/>
 3. Algoritma dalam bidang ilmu keuangan <br/>
 4. Algoritma dalam bidang ilmu fisika <br/>
+
 Contoh Algoritma dalam bidang matematika: <br/>
+
 1. Algoritma Euclidean <br/>
 2. Algoritma Euclidean Extended <br/>
 3. Algoritma Euclidean Modulus <br/>
