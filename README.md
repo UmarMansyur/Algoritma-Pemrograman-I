@@ -5,6 +5,6 @@ Selamat datang di praktikum mata kuliah Algoritma dan Pemrograman I. Di sini kit
 ### Pertemuan 3 ~ <a href="./Pertemuan3.md">Pengkondisian <b>If Else, Nested If dan Switch Case</b></a>
 ### Pertemuan 4 ~ <a href="./Pertemuan4.md">Perulangan For</a>
 ### Pertemuan 5 ~ <a href="./Pertemuan5.md">Perulangan While dan Do While</a>
-### Pertemuan 7 ~ <a href="./Pertemuan6.md">Array</a>
-### Pertemuan 8 ~ <a href="./Pertemuan8.md">Fungsi</a>
-### Pertemuan 9 ~ <a href="https://github.com/NazirArifin/modulpbo">Pengenalan OOP</a>
+### Pertemuan 6 ~ <a href="./Pertemuan6.md">Array</a>
+### Pertemuan 7 ~ <a href="./Pertemuan8.md">Fungsi</a>
+### Pertemuan 8 ~ <a href="https://github.com/NazirArifin/modulpbo">Pengenalan OOP</a>
